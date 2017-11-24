@@ -1,0 +1,14 @@
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{{ book.url }}" alt=""></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">{{ book.name }}</a>
+      </h4>
+      <p class="card-text">{{ book.description }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{% for i in range(1, book.rating) %} &#9733; {% endfor %}</small>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{% include "default/includes/top.html.twig" %}
+
+<div class="container">
+  <div class="row">
+
+    {% include "default/includes/sidebar.html.twig" %}
+
+    <div class="col-lg-9">
+      <div class="row">
+
+        {% for i in range(0, 5) %}
+            {% include "default/includes/card.html.twig" with {'book':books[i]} %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "default/includes/bottom.html.twig" %}
